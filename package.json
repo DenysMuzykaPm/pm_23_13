@@ -1,0 +1,21 @@
+{
+  "name": "lab_work_1",
+  "version": "1.0.0",
+  "description": "lab owrk 1",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-htmlmin": "^5.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016\u001b[C\u001b[D\u001b[Dhttps://github.com/DenysMuzykaPm/pm_23_13.git"
+  },
+  "author": "",
+  "license": "ISC"
+}
