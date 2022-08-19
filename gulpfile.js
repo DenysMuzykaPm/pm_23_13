@@ -4,7 +4,7 @@ const browserSync = require("browser-sync").create();
 const htmlmin = require("gulp-htmlmin");
 
 const worker = () =>{
-    return src("./app/**/*.{html,css,png,jpeg}")
+    return src("./app/**/*.{html,css,js,png,jpeg}")
             .pipe(htmlmin(
                 {collapseWhitespace: true}
             ))
@@ -13,7 +13,7 @@ const worker = () =>{
 }
 
 const watcher = () =>{
-    watch("./app/**/*.{html,css,png,jpeg}", worker)
+    watch("./app/**/*.{html,css,js,png,jpeg}", worker)
 }
 
 const server = () => {
