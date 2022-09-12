@@ -110,9 +110,14 @@ const c_2= t.content.getElementById("c_2");
 const c_3= t.content.getElementById("c_3");
 
 
+//big chart
 const big_chart = gsap.timeline({defaults: {duration: 1}});
 big_chart.from(".big_chart", {ease: "power4.out", opacity: 0, y: -100})
 
+
+// small chart
+const small_chart = gsap.timeline({defaults: {duration: 1}});
+small_chart.from(".small_chart", {ease: "power4.out", opacity: 0, y: -100}, "+0.1")
 
 fetch("./js/graph.json")
 .then(function (response) {
@@ -135,9 +140,24 @@ fetch("./js/graph.json")
   each:0.04
   
   }})
+
+  //small chart info
+  const sm_els_1 = document.querySelectorAll(".scp_name")
+  let i = 0
+  sm_els_1.forEach((el)=>{
+    el.innerText = data.traffic[i].name;
+    i += 1;
+  })
+
+  const sm_els_2 = document.querySelectorAll(".sc_percents")
+  let j = 0;
+  sm_els_2.forEach((el)=>{
+    el.innerText = `${data.traffic[j].value}%`;
+    j += 1;
+  })
+
 })
 
 
-// small chart
-const small_chart = gsap.timeline({defaults: {duration: 1}});
-small_chart.from(".small_chart", {ease: "power4.out", opacity: 0, y: -100}, "+0.1")
+
+
