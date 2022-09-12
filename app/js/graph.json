@@ -48,5 +48,19 @@
         "c_2": "70",
         "c_3": "80"
     }
+],
+"traffic":[
+    {
+        "name": "search engines",
+        "value": "87.7"
+    },
+    {
+        "name": "directs click",
+        "value": "85.5"
+    },
+    {
+        "name": "bookmarks click",
+        "value": "14.9"
+    }
 ]
 }

@@ -18,3 +18,6 @@ function parallaxTemp(e, p_class, p_speed, p_add_style){
         el.style.transform = `translateX(${x}px) translateY(${y}px) ${p_add_style}`;
    })
 }
+
+
+

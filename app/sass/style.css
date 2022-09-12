@@ -27,11 +27,15 @@
   background-image: linear-gradient(to top, #a25cff, #d285ff);
 }
 
-.graphics_section .big_chart .bigc_main ul li .bigc_jan .c_2, .graphics_section .big_chart .bigc_top .bigc_circles .b_circle:nth-child(2) div {
+.graphics_section .small_chart .sc_bot .sc_plate:nth-child(1) .sc_p_1 .scp_circle, .graphics_section .big_chart .bigc_main ul li .bigc_jan .c_2, .graphics_section .big_chart .bigc_top .bigc_circles .b_circle:nth-child(2) div {
   background-image: linear-gradient(to top, #ff7a90, #ffa996);
 }
 
-.graphics_section .big_chart .bigc_main ul li .bigc_jan .c_3, .graphics_section .big_chart .bigc_top .bigc_circles .b_circle:nth-child(3) div {
+.graphics_section .small_chart .sc_bot .sc_plate:nth-child(3) .sc_p_1 .scp_circle {
+  background-image: linear-gradient(to top, #1dc1a8, #70d4ca);
+}
+
+.graphics_section .small_chart .sc_bot .sc_plate:nth-child(2) .sc_p_1 .scp_circle, .graphics_section .big_chart .bigc_main ul li .bigc_jan .c_3, .graphics_section .big_chart .bigc_top .bigc_circles .b_circle:nth-child(3) div {
   background-image: linear-gradient(to top, #1b89e3, #7ec1f6);
 }
 
@@ -579,5 +583,49 @@ html {
   font-weight: 500;
 }
 .graphics_section .small_chart {
+  border-radius: 7px;
+  position: relative;
+  background-color: white;
+}
+.graphics_section .small_chart .sc_title {
+  padding: 20px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(62, 62, 62);
+}
+.graphics_section .small_chart .sc_bot {
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.graphics_section .small_chart .sc_bot .sc_plate {
+  display: flex;
+  justify-content: space-between;
+}
+.graphics_section .small_chart .sc_bot .sc_plate .sc_p_1 {
+  display: flex;
+}
+.graphics_section .small_chart .sc_bot .sc_plate .sc_p_1 .scp_circle {
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
   background-color: pink;
+  margin-right: 20px;
+}
+.graphics_section .small_chart .sc_bot .sc_plate .sc_p_1 .scp_name {
+  color: rgb(152, 152, 152);
+  font-weight: 500;
+}
+.graphics_section .small_chart .sc_bot .sc_plate .sc_percents {
+  color: rgb(152, 152, 152);
+}
+.graphics_section .small_chart .sc_bot .sc_plate:nth-child(1) .sc_p_1 {
+  display: flex;
+}
+.graphics_section .small_chart .sc_bot .sc_plate:nth-child(2) .sc_p_1 {
+  display: flex;
+}
+.graphics_section .small_chart .sc_bot .sc_plate:nth-child(3) .sc_p_1 {
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

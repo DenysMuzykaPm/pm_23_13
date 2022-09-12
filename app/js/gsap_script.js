@@ -110,8 +110,9 @@ const c_2= t.content.getElementById("c_2");
 const c_3= t.content.getElementById("c_3");
 
 
-const month_li = gsap.timeline({defaults: {duration: 1}});
-month_li.from(".big_chart", {ease: "power4.out", opacity: 0, y: -100})
+const big_chart = gsap.timeline({defaults: {duration: 1}});
+big_chart.from(".big_chart", {ease: "power4.out", opacity: 0, y: -100})
+
 
 fetch("./js/graph.json")
 .then(function (response) {
@@ -136,3 +137,7 @@ fetch("./js/graph.json")
   }})
 })
 
+
+// small chart
+const small_chart = gsap.timeline({defaults: {duration: 1}});
+small_chart.from(".small_chart", {ease: "power4.out", opacity: 0, y: -100}, "+0.1")

@@ -739,6 +739,77 @@ html{
     }
 
     .small_chart{
-        background-color: pink;
+        border-radius: 7px;
+        position: relative;
+        background-color: white;
+
+        .sc_title{
+            padding: 20px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            color: $g_2;
+        }
+
+        .sc_bot{
+            padding: 20px 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .sc_plate{
+                display: flex;
+                justify-content: space-between;
+
+
+                .sc_p_1{
+                    display: flex;
+
+                    .scp_circle{
+                        height: 20px;
+                        width: 20px;
+                        border-radius: 100%;
+                        background-color: pink;
+                       margin-right: 20px;
+                    }
+
+                    .scp_name{
+                        color: $g_0;
+                        font-weight: 500;
+                    }
+                }
+                
+
+                .sc_percents{
+                    color: $g_0;
+                }
+            }
+            .sc_plate:nth-child(1){
+                .sc_p_1{
+                    display: flex;
+
+                    .scp_circle{
+                        @extend %gradient_red_vertical;
+                    }
+                }
+            }
+            .sc_plate:nth-child(2){
+                .sc_p_1{
+                    display: flex;
+
+                    .scp_circle{
+                        @extend %gradient_blue_vertical;
+                    }
+                }
+            }
+            .sc_plate:nth-child(3){
+                .sc_p_1{
+                    display: flex;
+
+                    .scp_circle{
+                        @extend %gradient_green_vertical;
+                    }
+                }
+            }
+        }
+        
     }
 }
