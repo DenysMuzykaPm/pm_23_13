@@ -12,6 +12,16 @@ html{
     color: #ffffff;
     background-color: $p_1;
 }
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(200, 200, 200);
+}
+::-webkit-scrollbar-track {
+    background-color: $g_-1;
+}
 
 // navigation container
 .nav_section{
@@ -172,7 +182,7 @@ html{
 /* side bar menu section                                                                           */
 .side_bar_section{
     padding: 15px 2%;
-    height: 100vh;
+    height: 100%;
     width: $side_width_xx_large;
     background-color: white;
     ;
@@ -811,5 +821,104 @@ html{
             }
         }
         
+    }
+}
+
+// tickets section
+.tickets_section{
+    border-radius: 7px;
+    padding: 20px 3%;
+    margin-top: 30px;
+    margin-left: -10px;
+    margin-right: -100px;
+    // height: 500px;
+    background-color: white;
+
+    .tickets_title{
+        font-size: 18px;
+        font-weight: 700;
+        color: $g_2;
+        margin-bottom: 30px;
+    }
+
+    .t_main{
+
+
+        .t_m_header{
+            display: flex;
+            p{
+                // background-color: #83c3ff;
+                font-weight: 600;
+                color: $g_2;
+                margin-right: 40px;
+            }
+        }
+        p:nth-child(1){
+            width: 20%;
+        }
+        p:nth-child(2){
+            width:30%;
+        }
+        p:nth-child(3){
+            width:10%;
+        }
+        p:nth-child(4){
+            width:15%;
+        }
+        p:nth-child(5){
+            width:13%;
+            margin-right: 0px;
+        }
+
+
+        .t_m_body{
+
+
+            .tmb_plate{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 30px;
+
+                div{
+                    margin-right: 40px;
+                    align-items: center;
+                    // background-color: #83c3ff;
+                    p{
+                        width: 100%;
+                        height: 100%;
+                        @extend %spacing_eraser;
+                    }
+                }
+                div:nth-child(1){
+                    width: 20%;
+                    .t_icon{
+                        // border-radius: 100%;
+                        clip-path: inset(0 round 100px);
+                        margin-right: 10px;
+                        width:35px;
+                        height: 35px;
+                    }
+                }
+                div:nth-child(2){
+                    width:30%;
+                }
+                div:nth-child(3){
+                    width:10%;
+                }
+                div:nth-child(4){
+                    width:15%;
+                }
+                div:nth-child(5){
+                    width:13%;
+                    margin-right: 0px;
+                }
+                
+                .tmh_a{
+                    display: flex;
+                }
+            }
+        }
+       
     }
 }

@@ -85,10 +85,13 @@ cards.from('.page_name', {ease: "power4.out",opacity: 0, y: -100 }, "+=0.2")
 function set_graphics_width(){
     const referens = document.querySelector(".cb_3").offsetWidth;
     var referens2 = 2 * document.querySelector(".cb_2").offsetWidth;
-    referens2 += parseInt(getComputedStyle(document.querySelector(".cb_2")).marginLeft)
+    const r_ml = parseInt(getComputedStyle(document.querySelector(".cb_2")).marginLeft)
+    referens2 += r_ml
 
     document.getElementById("small_chart").style.width = `${referens}px`;
     document.getElementById("big_chart").style.width = `${referens2}px`;
+    document.getElementById("tickets_section").style.width = `${referens + referens2 + r_ml}px`;
+
 }
 set_graphics_width()
 window.addEventListener('resize', function(event){
