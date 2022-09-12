@@ -1,0 +1,73 @@
+$g_-1: rgb(240, 240, 240);
+$g_0: rgb(152, 152, 152);
+$g_1: rgb(125, 125, 125);
+$g_2: rgb(62, 62, 62);
+$p_1: #9d64b4;
+$b_g: #1bcf9c;
+
+$purple_gradient_1: #d285ff;
+$purple_gradient_2: #a25cff;
+
+$red_gradient_1: #ffa996;
+$red_gradient_2: #ff7a90;
+
+$blue_gradient_1: #7ec1f6;
+$blue_gradient_2: #1b89e3;
+
+$green_gradient_1: #70d4ca;
+$green_gradient_2: #1dc1a8;
+
+$header_height: 50px;
+
+$side_width_xx_large: 16%;
+$main_width_xx_large: 84%;
+
+$side_width_x_large: 20%;
+$main_width_x_large: 80%;
+
+$side_width_large: 25%;
+$main_width_large: 75%;
+
+
+%spacing_eraser{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+%transition_p_btn{
+    transition: color 0.3s ease-in-out;
+}
+%gradient_purple{
+    background-image: linear-gradient(to right, $purple_gradient_1, $purple_gradient_2);
+}
+%gradient_red{
+    background-image: linear-gradient(to right, $red_gradient_1, $red_gradient_2);
+}
+%gradient_green{
+    background-image: linear-gradient(to right, $green_gradient_1, $green_gradient_2);
+}
+%gradient_blue{
+    background-image: linear-gradient(to right, $blue_gradient_1, $blue_gradient_2);
+}
+
+%gradient_purple_vertical{
+    background-image: linear-gradient(to top, $purple_gradient_2, $purple_gradient_1);
+}
+%gradient_red_vertical{
+    background-image: linear-gradient(to top,  $red_gradient_2, $red_gradient_1);
+}
+%gradient_green_vertical{
+    background-image: linear-gradient(to top, $green_gradient_2, $green_gradient_1);
+}
+%gradient_blue_vertical{
+    background-image: linear-gradient(to top, $blue_gradient_2, $blue_gradient_1);
+}
+
+%mask_for_text{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+//=====================================================================================

@@ -32,7 +32,7 @@
              </div>
      
              <div class="nav_tools">
-                <button class="profile_plate ntp">
+                <button class="profile_plate">
                     <img src="./img/hand_with_cup.jpg" alt=":(" >
                     <p class="pp_name">Denys Muzyka</p>
                 </button>
@@ -113,7 +113,11 @@
                     <p class="sb_projects">projects</p>
 
                     <div class="add_project_block">
-                        <button>+ add a project</button>
+                        <button>
+                            <div class="bef"></div>
+                            <div class="plus">+</div> 
+                            <p>add a project</p>
+                        </button>
                     </div>
 
                     <p class="sb_cat">categories</p>
@@ -132,6 +136,7 @@
             </div>
         </div>
 
+        <!-- main scroll section======================================================================== -->
         <div class="container-fluid  main_scroll_container">
             <!-- cards section======================================================================== -->
             <div class=" card_section">
@@ -152,62 +157,121 @@
 
                 <div class="cards row">
                     
-                    <div class="card_box col" >
+                    <div class="card_box col cb_1" >
                         <div class="cb_top">
                             <p>weekly sales</p>
                             <i class="fa-regular fa-chart-line"></i>
                         </div>
                         
                         <div class="cb_mid">
-                            <p>$ <span>15,000</span></p>
+                            <p>$ <span id="num_1" end_num="13666">0</span></p>
                         </div>
 
                         <p class="cb_bot">increased by 60%</p>
 
                         <div class="bubles" >
-                            <div class="b_1"></div>
-                            <div class="b_2"></div>
+                            <div class="b_1" speed="2.5"></div>
+                            <div class="b_2" speed="-2"></div>
                         </div>
 
                     </div>
 
-                    <div class="card_box col mx-5"> 
+                    <div class="card_box col mx-5 cb_2"> 
                         <div class="cb_top">
                             <p>weekly orders</p>
                             <i class="fa-regular fa-bookmark"></i>
                         </div>
                         
                         <div class="cb_mid">
-                            <p>49, 5057</p>
+                            <p id="num_2" end_num="495057">0</p>
                         </div>
 
                         <p class="cb_bot">decreased by 10%</p>
 
                         <div class="bubles" >
-                            <div class="b_1"></div>
-                            <div class="b_2"></div>
+                            <div class="b_1" speed="-1.5"></div>
+                            <div class="b_2" speed="2.7"></div>
                         </div>
                     </div>
 
-                    <div class="card_box col">
+                    <div class="card_box col cb_3">
                         <div class="cb_top">
                             <p>visitors online</p>
                             <i class="fa-regular fa-gem"></i>
                         </div>
                         
                         <div class="cb_mid">
-                            <p>95,5741</p>
+                            <p id="num_3" end_num="955741">0</p>
                         </div>
 
                         <p class="cb_bot">increased by 5%</p>
 
                         <div class="bubles" >
-                            <div class="b_1"></div>
-                            <div class="b_2"></div>
+                            <div class="b_1" speed="1.1"></div>
+                            <div class="b_2" speed="-1"></div>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <!-- graphics section======================================================================== -->
+            <div class="graphics_section row">
+
+                <div class="big_chart"  id="big_chart">
+                    <div class="bigc_top">
+                        <p class="bt_text">visit & sales statistics</p>
+
+                        <div class="bigc_circles">
+                            <div class="b_circle">
+                                <div></div>
+                                <p>chn</p>
+                            </div>
+                            <div class="b_circle">
+                                <div></div>
+                                <p>usa</p>
+                            </div>
+                            <div class="b_circle">
+                                <div></div>
+                                <p>uk</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="bigc_main">
+                        <ul class="bm_month">
+                            <!-- <li>
+                                <div class="bigc_jan">
+                                    <div class="c_1"></div>
+                                    <div class="c_2"></div>
+                                    <div class="c_3"></div>
+                                </div>
+                                <p class="month_name">some</p>
+                            </li> -->
+                            
+                          
+                        </ul>
+
+                        <template id="template_element">
+                            <li>
+                                <div class="bigc_jan">
+                                    <div class="c_1 c_line" id="c_1"></div>
+                                    <div class="c_2 c_line" id="c_2"></div>
+                                    <div class="c_3 c_line" id="c_3"></div>
+                                </div>
+                                <p class="month_name">some</p>
+                            </li>
+                        </template>
+                        
+                    </div>
+                </div>
+
+                <div class="small_chart  " id="small_chart">
+
+                </div>
+            </div>
+
         </div>
     </div>
 
@@ -222,6 +286,7 @@
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
 
     <script src="js/gsap_script.js"></script>
+    <script src="js/paralax_effect.js"></script>
     <script type="text/javascript" src="js/jQuery.js"></script>
 </body>
 </html>
