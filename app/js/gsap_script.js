@@ -91,6 +91,8 @@ function set_graphics_width(){
     document.getElementById("small_chart").style.width = `${referens}px`;
     document.getElementById("big_chart").style.width = `${referens2}px`;
     document.getElementById("tickets_section").style.width = `${referens + referens2 + r_ml}px`;
+    document.getElementById("updates_section").style.width = `${referens + referens2 + r_ml}px`;
+    document.getElementById("status_section").style.width = `${referens + referens2 + r_ml}px`;
 
 }
 set_graphics_width()
