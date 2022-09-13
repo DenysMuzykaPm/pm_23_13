@@ -182,7 +182,6 @@ html{
 /* side bar menu section                                                                           */
 .side_bar_section{
     padding: 15px 2%;
-    height: 100%;
     width: $side_width_xx_large;
     background-color: white;
     ;
@@ -1071,7 +1070,7 @@ html{
 
             li{
                 width: 100%;
-                margin-bottom: 20px;
+                margin-bottom: 30px;
 
                 .temp_block{          
                     display: flex;
@@ -1102,7 +1101,7 @@ html{
                         .tb_loader{
                             width: 50%;
                             height: 100%;
-                            background-color: black;
+                            // background-color: black;
                         }
                     }
                 }
