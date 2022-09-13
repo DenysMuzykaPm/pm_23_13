@@ -432,7 +432,37 @@
             <div class="status_section" id="status_section">
                 <p class="st_title">project status</p>
 
-                
+                <div class="st_head">
+                    <p class="sth_1">#</p>
+                    <p class="sth_2">name</p>
+                    <p class="sth_3">due date</p>
+                    <p class="sth_4">progress</p>
+                </div>
+
+                <div class="st_main">
+                    <ul class="status_list" id="status_list">
+                        <!-- <li>
+                            <div class="temp_block">
+                                <p class="tb_cell tb_number">1</p>
+                                <p class="tb_cell tb_name">Hermak Beck</p>
+                                <p class="tb_cell tb_data">May 15, 2022</p>
+                                <p class="tb_cell tb_bar">*loadbar*</p>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+                <template id="template_status">
+                    <li>
+                        <div class="temp_block">
+                            <p class="tb_cell tb_number">test</p>
+                            <p class="tb_cell tb_name">test</p>
+                            <p class="tb_cell tb_data">test</p>
+                            <div class="tb_cell tb_bar">
+                                <div class="tb_loader"></div>
+                            </div>
+                        </div>
+                    </li>
+                </template>
             </div>
         </div>
         
@@ -448,6 +478,7 @@
     <script src="js/gsap_script.js"></script>
     <script src="js/paralax_effect.js"></script>
     <script src="js/graph_doughnut.js"></script>
+    <script src="js/status_controller.js"></script>
     <script type="text/javascript" src="js/jQuery.js"></script>
 </body>
 </html>

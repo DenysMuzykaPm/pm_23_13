@@ -1,4 +1,4 @@
-.updates_section .up_bot .upb_text p, .updates_section .sub_head .sh_brick p, .tickets_section .t_main .t_m_body .tmb_plate div p, .graphics_section .big_chart .bigc_main ul li .month_name, .graphics_section .big_chart .bigc_main ul, .graphics_section .big_chart .bigc_top .bigc_circles .b_circle p, .page_name .overview p, .main_side .side_bot .sb_categories .sb_plate p, .main_side .side_bot .add_project_block button p, .main_side .side_options .so_plate p, .main_side .user_box .u_name .un_2, .main_side .user_box .u_name .un_1, .m_container, .logo_plate .lp_inner p, .nav_tools .profile_plate p, .nav_section .input_bar #search_icon, .nav_section .input_bar, .nav_section {
+.status_section .st_main ul li .temp_block p, .status_section .st_main ul, .updates_section .up_bot .upb_text p, .updates_section .sub_head .sh_brick p, .tickets_section .t_main .t_m_body .tmb_plate div p, .graphics_section .big_chart .bigc_main ul li .month_name, .graphics_section .big_chart .bigc_main ul, .graphics_section .big_chart .bigc_top .bigc_circles .b_circle p, .page_name .overview p, .main_side .side_bot .sb_categories .sb_plate p, .main_side .side_bot .add_project_block button p, .main_side .side_options .so_plate p, .main_side .user_box .u_name .un_2, .main_side .user_box .u_name .un_1, .m_container, .logo_plate .lp_inner p, .nav_tools .profile_plate p, .nav_section .input_bar #search_icon, .nav_section .input_bar, .nav_section {
   padding: 0px;
   margin: 0px;
 }
@@ -644,7 +644,8 @@ html {
 }
 .tickets_section {
   border-radius: 7px;
-  padding: 20px 3%;
+  padding: 40px 3%;
+  padding-bottom: 50px;
   margin-top: 30px;
   margin-left: -10px;
   margin-right: -100px;
@@ -726,7 +727,8 @@ html {
 
 .updates_section {
   border-radius: 7px;
-  padding: 20px 3%;
+  padding: 40px 3%;
+  padding-bottom: 40px;
   margin-top: 30px;
   margin-left: -10px;
   margin-right: -100px;
@@ -760,7 +762,6 @@ html {
   margin-top: 30px;
 }
 .updates_section .up_main .um_brick {
-  background-color: #83c3ff;
   -webkit-clip-path: inset(0);
           clip-path: inset(0);
   height: 290px;
@@ -795,7 +796,9 @@ html {
 
 .status_section {
   border-radius: 7px;
-  padding: 20px 3%;
+  padding: 30px 3%;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
   margin-top: 30px;
   margin-left: -10px;
   margin-right: -100px;
@@ -805,4 +808,64 @@ html {
   font-size: 20px;
   font-weight: 800;
   color: rgb(62, 62, 62);
+  margin-bottom: 30px;
+}
+.status_section .st_head {
+  display: flex;
+  justify-content: space-between;
+}
+.status_section .st_head p {
+  font-weight: 600;
+  color: rgb(62, 62, 62);
+}
+.status_section .st_head .sth_1 {
+  width: 10%;
+}
+.status_section .st_head .sth_2 {
+  width: 15%;
+}
+.status_section .st_head .sth_3 {
+  width: 15%;
+}
+.status_section .st_head .sth_4 {
+  width: 35%;
+}
+.status_section .st_main ul {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+}
+.status_section .st_main ul li {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.status_section .st_main ul li .temp_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.status_section .st_main ul li .temp_block p {
+  color: rgb(62, 62, 62);
+  font-size: 15px;
+}
+.status_section .st_main ul li .temp_block .tb_cell:nth-child(1) {
+  width: 10%;
+}
+.status_section .st_main ul li .temp_block .tb_cell:nth-child(2) {
+  width: 15%;
+}
+.status_section .st_main ul li .temp_block .tb_cell:nth-child(3) {
+  width: 15%;
+}
+.status_section .st_main ul li .temp_block .tb_cell:nth-child(4) {
+  height: 10px;
+  width: 35%;
+  background-color: rgb(240, 240, 240);
+  -webkit-clip-path: inset(0 round 50px);
+          clip-path: inset(0 round 50px);
+}
+.status_section .st_main ul li .temp_block .tb_cell:nth-child(4) .tb_loader {
+  width: 50%;
+  height: 100%;
+  background-color: black;
 }/*# sourceMappingURL=style.css.map */

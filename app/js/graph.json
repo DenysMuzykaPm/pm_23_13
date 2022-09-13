@@ -62,5 +62,34 @@
         "name": "bookmarks click",
         "value": "14.9"
     }
+],
+
+"status":[
+    {
+        "name": "John Copac",
+        "data": "Fab 24, 2022",
+        "bar": "50"
+    },
+    {
+        "name": "Bob Cist",
+        "data": "Mar 25, 2022",
+        "bar": "70"
+    },
+    {
+        "name": "Marta Rushch",
+        "data": "Apr 19, 2022",
+        "bar": "90"
+    },
+    {
+        "name": "Julia Halk",
+        "data": "Jun 19, 2022",
+        "bar": "20"
+    },
+    {
+        "name": "Anton Lan",
+        "data": "Sep 13, 2022",
+        "bar": "30"
+    }
 ]
+
 }

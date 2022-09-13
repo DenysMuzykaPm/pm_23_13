@@ -827,7 +827,8 @@ html{
 // tickets section
 .tickets_section{
     border-radius: 7px;
-    padding: 20px 3%;
+    padding: 40px 3%;
+    padding-bottom: 50px;
     margin-top: 30px;
     margin-left: -10px;
     margin-right: -100px;
@@ -928,7 +929,8 @@ html{
 // updates section
 .updates_section{
     border-radius: 7px;
-    padding: 20px 3%;
+    padding: 40px 3%;
+    padding-bottom: 40px;
     margin-top: 30px;
     margin-left: -10px;
     margin-right: -100px;
@@ -971,7 +973,7 @@ html{
         margin-top: 30px;
 
         .um_brick{
-            background-color: #83c3ff;
+            // background-color: #83c3ff;
             clip-path: inset(0);
             // width: 50%;
             height: 290px;
@@ -1020,7 +1022,9 @@ html{
 //project status
 .status_section{
     border-radius: 7px;
-    padding: 20px 3%;
+    padding: 30px 3%;
+    padding-bottom: 40px;
+    margin-bottom: 50px;
     margin-top: 30px;
     margin-left: -10px;
     margin-right: -100px;
@@ -1031,6 +1035,78 @@ html{
         font-size: 20px;
         font-weight: 800;
         color: $g_2;
-        // margin-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    .st_head{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-weight: 600;
+            color: $g_2;
+            // background-color: #83c3ff;
+        }
+
+        .sth_1{
+            width: 10%;
+        }
+        .sth_2{
+            width: 15%;
+        }
+        .sth_3{
+            width: 15%;
+        }
+        .sth_4{
+            width: 35%;
+        }
+    }
+
+    .st_main{
+        
+        ul{
+            @extend %spacing_eraser;
+            display: flex;
+            list-style: none;
+            flex-direction: column;
+
+            li{
+                width: 100%;
+                margin-bottom: 20px;
+
+                .temp_block{          
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    p{
+                        color: $g_2;
+                        font-size: 15px;
+                        @extend %spacing_eraser;
+                    }
+
+                    .tb_cell:nth-child(1){
+                        width: 10%;
+                    }
+                    .tb_cell:nth-child(2){
+                        width: 15%;
+                    }
+                    .tb_cell:nth-child(3){
+                        width: 15%;
+                    }
+                    .tb_cell:nth-child(4){
+                        height: 10px;
+                        width: 35%;
+                        background-color: $g_-1;
+                        clip-path: inset(0 round 50px);
+
+                        .tb_loader{
+                            width: 50%;
+                            height: 100%;
+                            background-color: black;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
