@@ -29,6 +29,42 @@ gsap.registerEffect({
   })
 
 
+// recent tickets
+const recent_tickets = gsap.timeline({defaults: {duration:1.2}});
+recent_tickets.from(".tickets_section", {ease: "power4.out",  opacity: 0, y: -100});
+
+ScrollTrigger.create({
+animation: recent_tickets,
+// scroller: ".container",
+trigger: ".tickets_section",
+start: "top center",
+// toggleActions: "restart pause none pause"
+})
+
+// recent updates
+const recent_updates = gsap.timeline({defaults: {duration:1.4}});
+recent_updates.from(".updates_section", {ease: "power4.out",  opacity: 0, y: -100});
+
+ScrollTrigger.create({
+animation: recent_updates,
+// scroller: ".container",
+trigger: ".updates_section",
+start: "top center",
+// toggleActions: "restart pause none pause"
+})
+
+//project status
+const project_status = gsap.timeline({defaults: {duration:1.2}});
+project_status.from(".status_section", {ease: "power4.out",  opacity: 0, y: -100});
+
+ScrollTrigger.create({
+animation: project_status,
+// scroller: ".container",
+trigger: ".status_section",
+start: "top center",
+// toggleActions: "restart pause none pause"
+})
+
 
 //header section                                                                                                    
 const header = gsap.timeline({defaults: {duration: 0.6}});
@@ -166,6 +202,7 @@ fetch("./js/graph.json")
 
 
 
+// recent tickets ^^^ go to the top
 
 
 
