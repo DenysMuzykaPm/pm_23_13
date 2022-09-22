@@ -41,6 +41,7 @@
 
 .page_name .overview i, .logo_plate .lp_inner p, .logo_plate .lp_inner i {
   -webkit-background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
@@ -254,6 +255,7 @@ html {
   margin-top: 30px;
 }
 .main_side .side_options .so_plate {
+  text-decoration: none;
   display: flex;
   justify-content: space-between;
   padding: 13px 0px;

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./sass/style.css">
+
+    <script src="https://kit.fontawesome.com/b81eb34b4d.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="/node_modules/jquery/dist/jquery.slim.min.js"></script>
+
+    <title>sample pages</title>
+</head>
+<body>
+    <!-- navigation section                                      -->
+    <div class="container-fluid nav_section">
+        <div class="logo_plate">
+            <div class="lp_inner">
+                <i class="fa-solid fa-layer-group"></i>
+                <p class="l_title">Purple</p>
+            </div>
+        </div>
+
+
+        
+        <div class="head_main">
+            <div class="input_bar">
+                <p id="search_icon">🔍</p>
+                <input type="text" id="input_field" placeholder="search projects...">
+             </div>
+     
+             <div class="nav_tools">
+                <button class="profile_plate">
+                    <img src="./img/hand_with_cup.jpg" alt=":(" >
+                    <p class="pp_name">Denys Muzyka</p>
+                </button>
+                <button class="expand_plate ntp">
+                    <i class="fa-solid fa-expand"></i>
+                </button>
+                <button class="mail_plate ntp">
+                    <i class="fa-regular fa-envelope"></i>
+                </button>
+                <button class="notification_plate ntp">
+                    <i class="fa-regular fa-bell"></i>
+                </button>
+                <button class="exit_plate ntp">
+                    <i class="fa-regular fa-power-off"></i>
+                </button>
+                <button class="list_plate ntp">
+                 <i class="fa-solid fa-list-check"></i>
+                </button>
+             </div>
+        </div>
+   </div>
+
+
+   <!-- main section                                                                        -->
+    <div class="container-fluid m_container">
+
+        <!-- side bar menu -->
+        <div class=" side_bar_section">
+            <div class="main_side">
+
+                <div class="user_box">
+                    <div class="u_img">
+                        <img src="./img/hand_with_cup.jpg" alt=":(">
+                    </div>
+                    <div class="u_name">
+                        <p class="un_1">Denys Muzyka</p>
+                        <p class="un_2">project manager</p>
+                    </div>
+                    <div class="u_mark">
+                        <i class="fa-solid fa-bookmark">
+                            <i class="fa-solid fa-check"></i>
+                        </i>
+                    </div>
+                </div>
+
+                <div class="side_options">
+                    <a href="index.html" class="so_plate" id="dachboard">
+                        <p class="so_text">dashboard</p>
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                    <a href="ui_elements.html" class="so_plate" id="ui_elements">
+                        <p class="so_text">ui elements</p>
+                        <i class="fa-solid fa-location-crosshairs"></i>
+                    </a>
+                    <a href="icons.html" class="so_plate" id="icons">
+                        <p class="so_text">icons</p>
+                        <i class="fa-solid fa-clipboard-user"></i>
+                    </a>
+                    <a href="form.html" class="so_plate" id="forms">
+                        <p class="so_text">forms</p>
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <a href="charts.html" class="so_plate" id="charts">
+                        <p class="so_text">charts</p>
+                        <i class="fa-solid fa-chart-column"></i>
+                    </a>
+                    <a href="tablets.html" class="so_plate" id="tablets">
+                        <p class="so_text">tablets</p>
+                        <i class="fa-solid fa-table"></i>
+                    </a>
+                    <a href="sample_pages.html" class="so_plate" id="sample pages">
+                        <p class="so_text">sample pages</p>
+                        <i class="fa-solid fa-file-lines"></i>
+                    </a>
+                </div>
+
+                <div class="side_bot">
+                    <p class="sb_projects">projects</p>
+
+                    <div class="add_project_block">
+                        <button>
+                            <div class="bef"></div>
+                            <div class="plus">+</div> 
+                            <p>add a project</p>
+                        </button>
+                    </div>
+
+                    <p class="sb_cat">categories</p>
+
+                    <div class="sb_categories">
+                        <div class="sb_plate">
+                            <div class="circle"></div>
+                            <p>friends</p>
+                        </div>
+                        <div class="sb_plate">
+                            <div class="circle"></div>
+                            <p>pro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-fluid  main_scroll_container">
+            <!-- cards section======================================================================== -->
+            <div class=" card_section">
+                <div class="page_name">
+                    <div class="pn_block" w3-include-html="empty_message.html">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    
+    
+    <script src="./js/w3_include_html.js"></script>
+    <script>
+        includeHTML();
+    </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script> -->
+    <script src="/node_modules/chart.js/dist/chart.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
+
+    <script src="js/jquery_controller.js"></script>
+    <script src="js/gsap_script.js"></script>
+    <script src="js/paralax_effect.js"></script>
+    <!-- <script src="js/graph_doughnut.js"></script> -->
+    <!-- <script src="js/status_controller.js"></script> -->
+
+</body>
+</html>

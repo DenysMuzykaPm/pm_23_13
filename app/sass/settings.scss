@@ -65,7 +65,7 @@ $main_width_large: 75%;
 }
 
 %mask_for_text{
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
